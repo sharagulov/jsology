@@ -1,0 +1,28 @@
+$color-accent: #2294F9;
+$color-gray: #E5E5E5;
+$color-accent-gray: #BEBEBE;
+$color-green: #2DC583;
+$color-purple: #AB69E5;
+$color-blue: #5594E6;
+
+$base-offset: 50px;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fit {
+  width: fit-content;
+  height: fit-content;
+}
+
+@mixin glass(
+  $blur: 20px,
+  $bg: rgba(255, 255, 255, 0.5),
+) {
+  background-color: $bg;
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+}

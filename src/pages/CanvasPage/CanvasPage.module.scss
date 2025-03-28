@@ -1,0 +1,24 @@
+.main {
+  position: relative;
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  padding: $base-offset;
+}
+
+.skip {
+  position: absolute;
+  left: $base-offset; bottom: $base-offset;
+}
+
+.hints {
+  position: absolute;
+  right: $base-offset; bottom: $base-offset;
+}

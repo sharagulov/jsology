@@ -1,0 +1,21 @@
+.bar {
+  height: fit-content;
+  width: fit-content;
+  min-width: 50px;
+  padding: 5px 5px;
+  border-radius: 10px;
+
+  margin: $base-offset;
+  position: absolute;
+  z-index: 9999;
+  
+  @include center;
+  @include glass;
+  
+}
+
+.separator {
+  height: 20px;
+  width: 1px;
+  background-color: $color-gray;
+}

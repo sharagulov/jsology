@@ -1,0 +1,36 @@
+.clickWrapper {
+  @include fit
+}
+
+.button {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  user-select: none;
+  border-radius: 9999px;
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.default {
+  background-color: $color-accent;
+  color: white;
+
+  opacity: .85;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.ghost {
+  color: black;
+
+  opacity: .65;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 1;
+  }
+}
