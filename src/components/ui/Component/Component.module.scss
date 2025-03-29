@@ -1,0 +1,13 @@
+.component {
+  @include fit;
+  position: absolute;
+}
+
+.screen {
+  width: clamp(300px, 90dvw, 3000px);
+  height: clamp(150px, 60dvh, 2000px);
+
+  border-radius: 20px;
+  @include glass;
+  @include shadow;
+}

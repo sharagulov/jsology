@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 9000,
-    open: false, // можно true, чтобы автоматически открывалось
+    open: true, // можно true, чтобы автоматически открывалось
   },
   define: {
     __APP_VERSION__: JSON.stringify('0.1.0'),
@@ -19,7 +19,9 @@ export default defineConfig({
       '@ui': path.resolve(__dirname, './src/components/ui'),
       '@pages': path.resolve(__dirname, './src/pages'),
       '@styles': path.resolve(__dirname, './src/styles'),
-      '@contexts': path.resolve(__dirname, './src/shared/contexts'),
+      '@components': path.resolve(__dirname, './src/components'),
+      '@stores': path.resolve(__dirname, './src/shared/stores'),
+      '@utils': path.resolve(__dirname, './src/shared/utils'),
     },
   },
   css: {

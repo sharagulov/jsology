@@ -1,0 +1,12 @@
+.viewport {
+  @include full;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  z-index: 10;
+}
+
+.world {
+  position: relative;
+  transform-origin: top left;
+}

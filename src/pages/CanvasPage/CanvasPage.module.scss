@@ -22,3 +22,10 @@
   position: absolute;
   right: $base-offset; bottom: $base-offset;
 }
+
+
+.static {
+  width: 9999px;
+  height: 9999px;
+  z-index: 10
+}

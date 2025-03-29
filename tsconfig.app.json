@@ -14,7 +14,9 @@
       "@ui/*": ["src/components/ui/*"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],
-      "@contexts/*": ["src/shared/contexts/*"],
+      "@components/*": ["src/components/*"],
+      "@stores/*": ["src/shared/stores/*"],
+      "@utils/*": ["src/shared/utils/*"],
     },
 
     /* Bundler mode */
