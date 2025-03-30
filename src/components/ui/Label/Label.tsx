@@ -8,8 +8,8 @@ export function Label(props: LabelProps) {
 
   if (typeof props.children === 'string') {
     return (
-      <div className={styles.single}>
-        <h2>{children}</h2>
+      <div className={`${styles.single} ${styles[props.variant]}`}>
+        {props.variant === 'big' ? (<h2>{children}</h2>) : (<span>{children}</span>)}
       </div>
     )
   } else {

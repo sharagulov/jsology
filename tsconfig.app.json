@@ -10,7 +10,7 @@
     "baseUrl": "./",
     "paths": {
       "@core/*": ["src/core/*"],
-      "@hooks/*": ["src/hooks/*"],
+      "@hooks/*": ["src/shared/hooks/*"],
       "@ui/*": ["src/components/ui/*"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],

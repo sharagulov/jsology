@@ -13,15 +13,25 @@
   padding: $base-offset;
 }
 
-.skip {
+
+.skip, .label, .hints {
   position: absolute;
+  z-index: 20;
+}
+
+.skip {
   left: $base-offset; bottom: $base-offset;
+
 }
 
 .hints {
-  position: absolute;
   right: $base-offset; bottom: $base-offset;
 }
+
+.label {  
+  left: $base-offset; top: $base-offset + 70px;
+}
+
 
 
 .static {

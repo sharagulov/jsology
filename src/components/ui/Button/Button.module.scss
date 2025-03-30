@@ -1,5 +1,5 @@
 .clickWrapper {
-  @include fit
+  @include fit;
 }
 
 .button {
@@ -20,19 +20,40 @@
   background-color: $color-accent;
   color: white;
 
-  opacity: .85;
-  transition: opacity .3s;
+  transition: background-color 0.1s;
   &:hover {
-    opacity: 1;
+    background-color: $color-accent-hover;
   }
 }
 
 .ghost {
   color: black;
 
-  opacity: .65;
-  transition: opacity .3s;
+  opacity: 0.65;
+  transition: opacity 0.3s;
   &:hover {
     opacity: 1;
   }
+}
+
+.square {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  @include shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+.sqicon {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
 }

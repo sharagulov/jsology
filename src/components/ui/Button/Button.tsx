@@ -15,8 +15,8 @@ export function Button(props: ButtonProps) {
           disabled={disabled}
           onClick={props.onClick}
         >
-          {children}
-          {icon && <img className={styles.icon} src={`icons/button/button-icon-${icon}.svg`} alt="icon" />}
+          {variant !== 'square' ? children : null}
+          {icon && <img className={`${variant !== 'square' ? styles.icon : styles.sqicon}`} src={`${import.meta.env.BASE_URL}icons/button/button-icon-${icon}.${variant !== 'square' ? 'svg' : 'png'}`} alt="icon" />}
         </button>
       </div>
     )
@@ -31,7 +31,7 @@ export function Button(props: ButtonProps) {
       >
         <button className={`${styles.button} ${styles[variant]}`} disabled={disabled}>
           {children}
-          {icon && <img src={`button-icon-${icon}`} alt="icon" />}
+          {icon &&  <img className={styles.icon} src={`${import.meta.env.BASE_URL}icons/button/button-icon-${icon}.svg`} alt="icon" />}
         </button>
         {openMenu && <div className={styles.dropdown}></div>}
       </div>

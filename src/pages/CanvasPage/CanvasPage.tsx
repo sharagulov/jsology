@@ -3,13 +3,14 @@ import styles from './CanvasPage.module.scss'
 import { PageTransition } from '../../components/PageTransition'
 import { Button } from '@ui/Button/Button'
 import { useOnboarding } from '@hooks/useOnboarding'
-import { Hints } from '@ui/hints/Hints'
+import { Hints } from '@ui/Hints/Hints'
 import { Component } from '@ui/Component/Component'
 import { CanvasViewport } from '@components/canvas/CanvasViewport'
 import { getViewportCenter } from '@utils/getViewportCenter'
 import { useCanvasStore } from '@stores/useCanvasStore'
 import { useEffect } from 'react'
 import { initCanvasOnce } from '@utils/initOnce'
+import { Label } from '@ui/Label/Label'
 
 function CanvasPage() {
   const hasUnsavedChanges = true
@@ -33,6 +34,9 @@ function CanvasPage() {
         </CanvasViewport>
         {isOnboarding && (
           <section className={styles.absolute}>
+            <div className={styles.label}>
+              <Label variant='big'>Canvas 00</Label>
+            </div>
             <div className={styles.skip}>
               <Button type="click" onClick={() => {}}>
                 Skip tutorial

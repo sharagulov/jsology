@@ -2,11 +2,17 @@
   @include full;
   overflow: hidden;
   position: relative;
-  cursor: grab;
   z-index: 10;
+
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, $color-gray-invisible 1px, transparent 1px),
+    linear-gradient(to bottom, $color-gray-invisible 1px, transparent 1px);
 }
 
 .world {
-  position: relative;
-  transform-origin: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }

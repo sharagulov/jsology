@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 export function PageTransition({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
+      initial={{ opacity: 0, scale: 0.985 }}
       animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
+      exit={{ opacity: 0, scale: 0.985 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
       {children}

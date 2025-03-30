@@ -1,6 +1,9 @@
 .component {
   @include fit;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .screen {
@@ -10,4 +13,10 @@
   border-radius: 20px;
   @include glass;
   @include shadow;
+}
+
+.bottom {
+  display: flex;
+  justify-content: end;
+  z-index: 9999;
 }
